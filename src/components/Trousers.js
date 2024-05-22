@@ -10,10 +10,8 @@ import state from "../state";
 import { Html } from '@react-three/drei';
 
 export const Trousers = ({ fabricIndex, styleIndex, styleIndex1, styleIndex2 }) => {
-  const [hovered, setHovered] = useState(null);
   const group = useRef();
   const inputRef = useRef();
-  const [indeximg, setIndeximg] = useState(0);
   const snap = useSnapshot(state);
   const { nodes, materials } = useGLTF("pra.glb");
   const { camera } = useThree();
